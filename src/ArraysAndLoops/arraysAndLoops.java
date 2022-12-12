@@ -44,7 +44,5 @@ public class arraysAndLoops {
          end = System.currentTimeMillis();
         System.out.println("Time is sequential sorting. : " + (end - start));
 
-
-
     }
 }

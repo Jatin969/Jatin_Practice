@@ -1,6 +1,7 @@
 package Abstraction_Examples.UpiBanking.Application;
 
 import Abstraction_Examples.UpiBanking.bank.BankInterface;
+import Abstraction_Examples.UpiBanking.bank.sbi.sbiBank;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,14 +13,24 @@ import java.util.Optional;
  */
 
 enum banksForDemoAppication{
-    State_Bank_of_India (1, "sbi"){
+
+
+    State_Bank_of_India(1,"sbi") {
         @Override
         public BankInterface bankResolver(){
-//            BankInterface sbi = new SbiBank();
+            BankInterface sbi = (BankInterface) new sbiBank();
 //            TODO : implement sbiCLass using BAnkInterface.
-//            return ;
+            return sbi;
         }
     };
+
+    private final int val;
+    private final String text;
+
+    banksForDemoAppication(int val, String text){
+        this.val = val;
+        this.text = text;
+    }
 
     public abstract BankInterface bankResolver();
 

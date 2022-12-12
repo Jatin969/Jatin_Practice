@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="practice">
-      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationRepository.java" afterDir="false" />
+    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="practice-1">
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/sbi/sbiBank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndLoops/arraysAndLoops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndLoops/arraysAndLoops.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,7 @@
       <recent name="Abstraction_Examples.UpiBanking.Application_PAYTM" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.arraysAndLoops">
+  <component name="RunManager" selected="Application.forloopAndLabels">
     <configuration name="arraysAndLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArraysAndLoops.arraysAndLoops" />
       <module name="Jatin_Practice" />
@@ -100,6 +99,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="forloopAndLabels" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndLoops.forloopAndLabels" />
+      <module name="Jatin_Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArraysAndLoops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Abstraction_Examples.UpiBanking.test" />
       <module name="Jatin_Practice" />
@@ -115,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.forloopAndLabels" />
         <item itemvalue="Application.arraysAndLoops" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.forExecution" />
@@ -151,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670595994953</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="practice-1">
+      <created>1670834464626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670834464626</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +252,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="practice" />
-    <option name="LAST_COMMIT_MESSAGE" value="practice" />
+    <MESSAGE value="practice-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="practice-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
