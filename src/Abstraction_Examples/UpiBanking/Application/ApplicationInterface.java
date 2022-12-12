@@ -8,12 +8,10 @@ public interface ApplicationInterface {
     public void welcome();
     public void login();
     public void createAccount();
-    public void addCard();
+    public String addCard();
     public void updateAccount();
-    public void payToNumber();
     public void payToUPI();
     public void getCurrentAmount();
     public void requestPaymentFromUPI();
-    public void requestPaymentFromPhone();
     public void exit();
 }

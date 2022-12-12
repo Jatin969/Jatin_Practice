@@ -4,24 +4,23 @@ import java.util.Base64;
 
 public class UserAccount {
 
-    private String email;
-
-    private String username;
+    private final String username;
     private String name;
     private String phoneNo;
     private String password;
 
-    private String ipuId;
+    private final String ipuId;
 
 
 
-    protected void changeDetails(String name, String password){
-        this.name = name;
-        this.password = password;
+    public void changeDetails(String... args){
+        if(this.password.equals(args[0]) == false) return;
+        this.name = args[2];
+        this.phoneNo = args[3];
+
     }
 
-    public UserAccount(String name, String phoneNo, String password, String email, String username, String ipuId){
-        this.email = email;
+    public UserAccount(String name, String phoneNo, String password, String username, String ipuId){
         this.username = username;
         this.ipuId = ipuId;
         this.name = name;
@@ -29,8 +28,8 @@ public class UserAccount {
         this.password = Base64.getEncoder().withoutPadding().encodeToString(password.getBytes());
     }
 
-    public String getName() {
-        return name;
+    public String getUsername(){
+        return this.username;
     }
 
 
