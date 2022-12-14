@@ -1,9 +1,11 @@
 package Abstraction_Examples.UpiBanking.Application;
 
+import Abstraction_Examples.UpiBanking.User.UserAccount;
+
 import java.util.HashMap;
 
 public class ApplicationUserAndABankRepository {
-    protected static HashMap<String,UserAccount> userRepo = new HashMap<>();
+    protected static HashMap<String, UserAccount> userRepo = new HashMap<>();
     protected static HashMap<String, String> banksWithInitials = new HashMap<>();
     static{
         banksWithInitials.put("State Bank of India","sbi");

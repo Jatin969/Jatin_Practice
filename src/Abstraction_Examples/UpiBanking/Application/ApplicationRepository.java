@@ -1,5 +1,7 @@
 package Abstraction_Examples.UpiBanking.Application;
 
+import Abstraction_Examples.UpiBanking.User.UserAccount;
+
 import java.util.*;
 
 public class ApplicationRepository {

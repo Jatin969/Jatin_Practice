@@ -1,5 +1,6 @@
 package Abstraction_Examples.UpiBanking.Application;
 
+import Abstraction_Examples.UpiBanking.User.UserAccount;
 import Abstraction_Examples.UpiBanking.bank.BankInterface;
 import Abstraction_Examples.UpiBanking.bank.sbi.sbiBank;
 
@@ -151,12 +152,21 @@ public class DemoApplication implements ApplicationInterface{
         int cvv = getCVV();
         String cardpin = validateAndGetCardpin();
 
-//        BankInterface bank = getBankInstance(bank);
+        BankInterface bank = getBankInstance();
 
+        return bank;
     }
 
-    private BankInterface getBankInstance(String bank){
-        String processedName = bank.replace(" ","_");
+    private BankInterface getBankInstance(int index){
+
+        switch(index){
+            case 1 :
+                final BankInterface sbi = (BankInterface) banksForDemoAppication.State_Bank_of_India(1, "sbi").bankResolver();
+                return sbi;
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + index);
+        }
 
     }
 
@@ -190,7 +200,7 @@ public class DemoApplication implements ApplicationInterface{
     }
 
     private String validateAndGetCardNo() {
-        display("Enter card number :")
+        display("Enter card number :");
         String cardNo = scan();
         return cardNo;
     }

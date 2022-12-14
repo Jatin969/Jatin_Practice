@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="practice-1">
-      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/sbi/sbiBank.java" afterDir="false" />
+    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="practice of loops and operators with if else and switch statements.">
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/ApplicationExceptions/ApplicationExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/IncorrectCardDetailsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/InvalidPhoneNumberException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/PhoneListEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/PhoneNumberNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/COUNTRY.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ArraysAndLoops/ObjectStreamComparision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExceptionExamples/Example.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationUserAndABankRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationUserAndABankRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArraysAndLoops/arraysAndLoops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndLoops/arraysAndLoops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/UserAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +35,7 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -71,8 +84,24 @@
       <recent name="Abstraction_Examples.UpiBanking.Application_PAYTM.bank" />
       <recent name="Abstraction_Examples.UpiBanking.Application_PAYTM" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Abstraction_Examples.UpiBanking.User" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.forloopAndLabels">
+  <component name="RunManager" selected="Application.ObjectStreamComparision">
+    <configuration name="ObjectStreamComparision" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndLoops.ObjectStreamComparision" />
+      <module name="Jatin_Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArraysAndLoops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="arraysAndLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArraysAndLoops.arraysAndLoops" />
       <module name="Jatin_Practice" />
@@ -127,6 +156,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ObjectStreamComparision" />
         <item itemvalue="Application.forloopAndLabels" />
         <item itemvalue="Application.arraysAndLoops" />
         <item itemvalue="Application.test" />
@@ -171,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670834464626</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="practice of loops and operators with if else and switch statements.">
+      <created>1670841188548</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670841188548</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +290,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="practice" />
     <MESSAGE value="practice-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="practice-1" />
+    <MESSAGE value="practice of loops and operators with if else and switch statements." />
+    <option name="LAST_COMMIT_MESSAGE" value="practice of loops and operators with if else and switch statements." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
