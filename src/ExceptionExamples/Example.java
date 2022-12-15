@@ -66,7 +66,7 @@ public class Example {
     }
 
     public void AssertionStateException(){
-        assert(10/0 == 0);
+        assert (10 == 0) : "REALLY.....";
         //assertions are by default desabled in java
         // we have to use java -ea example
     }

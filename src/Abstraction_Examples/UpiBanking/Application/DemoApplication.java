@@ -1,11 +1,14 @@
 package Abstraction_Examples.UpiBanking.Application;
 
+import Abstraction_Examples.UpiBanking.Exceptions.InvalidPhoneNumberException;
+import Abstraction_Examples.UpiBanking.User.COUNTRY;
+import Abstraction_Examples.UpiBanking.User.Phone;
 import Abstraction_Examples.UpiBanking.User.UserAccount;
 import Abstraction_Examples.UpiBanking.bank.BankInterface;
 import Abstraction_Examples.UpiBanking.bank.sbi.sbiBank;
 
-import java.util.List;
-import java.util.Optional;
+import javax.security.auth.login.LoginException;
+import java.util.*;
 
 
 /**
@@ -13,10 +16,9 @@ import java.util.Optional;
  *
  */
 
-enum banksForDemoAppication{
+enum banksForDemoApplication {
 
-
-    State_Bank_of_India(1,"sbi") {
+    State_Bank_of_India("sbi") {
         @Override
         public BankInterface bankResolver(){
             BankInterface sbi = (BankInterface) new sbiBank();
@@ -25,12 +27,10 @@ enum banksForDemoAppication{
         }
     };
 
-    private final int val;
-    private final String text;
+    private final String val;
 
-    banksForDemoAppication(int val, String text){
+    banksForDemoApplication(String val){
         this.val = val;
-        this.text = text;
     }
 
     public abstract BankInterface bankResolver();
@@ -38,8 +38,27 @@ enum banksForDemoAppication{
 }
 
 public class DemoApplication implements ApplicationInterface{
+
+    private static class ApplicationRepository{
+        static List<UserAccount> userList = new ArrayList<>();
+
+        static Set<String> usernameSet = new HashSet<>();
+
+        static HashMap<String, String> bankList = new HashMap<>();
+
+        static{
+            bankList.put("sbi", "State Bank of India");
+            bankList.put("apl","Axis Bank");
+            bankList.put("fbl","Federal Bank");
+            bankList.put("icici","ICICI bank");
+            bankList.put("indus","IndusInd Bank");
+            bankList.put("kmbl","Kotak Mahindra Bank");
+        }
+
+    }
     UserAccount user = null;
     boolean loggedIn = false;
+    BankInterface bank = null;
 
     private String scan(){
         return scn.nextLine().trim().toLowerCase();
@@ -73,7 +92,7 @@ public class DemoApplication implements ApplicationInterface{
     }
 
     private Optional<UserAccount> validateUser(String username, String password){
-        Optional<UserAccount> account = ApplicationRepository.accountList.stream().filter(user -> {
+        Optional<UserAccount> account = ApplicationRepository.userList.stream().filter(user -> {
             return this.user.getUsername().equals(username) && this.user.getPassword().equals(password);
         }).findFirst();
         return account;
@@ -102,11 +121,24 @@ public class DemoApplication implements ApplicationInterface{
 
     @Override
     public void createAccount() {
+        String username = validateAndGetUsername();
         display("Enter name : ");
         String name = scan();
-        String phoneNumber = validateAndGetPhoneNumber();
-        String username = validateAndGetUsername();
+        Phone phoneNumber = validateAndGetPhoneNumber();
         String password = validateAndGetPassword();
+        String upi = addCard(username);
+
+        try{
+            this.user = new UserAccount(name,
+                    phoneNumber,
+                    password,
+                    username,
+                    upi);
+        }catch(InvalidPhoneNumberException e){
+            display("Something went wrong.");
+            createAccount();
+        }
+
     }
 
     private String validateAndGetPassword() {
@@ -120,11 +152,18 @@ public class DemoApplication implements ApplicationInterface{
 
     }
 
-    private String validateAndGetPhoneNumber(){
+    private Phone validateAndGetPhoneNumber(){
+        // TODO options for countries:
+
         display("Enter phone number : ");
         String phone = scn.nextLine().trim();
-        if(!validatePhoneNumber(phone)) validateAndGetPhoneNumber();
-        return phone;
+        try{
+            return (Phone) new Phone(COUNTRY.INDIA,phone);
+        }catch(Exception e){
+            System.out.println(e);
+            validateAndGetPhoneNumber();
+        }
+        return null;
     }
 
     private String validateAndGetUsername(){
@@ -138,34 +177,76 @@ public class DemoApplication implements ApplicationInterface{
         System.out.println(s);
     }
 
-    private boolean validatePhoneNumber(String phone){
-        for(char ch : phone.toCharArray()) if(ch < '0' || ch > '9') return false;
-        return phone.length() == 10;
-        // TODO validation trough OTP
-    }
 
     @Override
-    public String addCard() {
-        String bank = getBank();
-        String cardNo = validateAndGetCardNo();
+    public String addCard(String username) {
+        String bankAbbrvt = getBank();
+        BankInterface bank = null;
+        try{
+             bank = getBankInstance(bankAbbrvt);
+        }catch(IllegalStateException e){
+            System.out.println("This bank is not available.");
+            bankAbbrvt = getBank();
+        }
+        long cardNo = validateAndGetCardNo();
         int[] expireDate = validateAndGetExpDate();
         int cvv = getCVV();
         String cardpin = validateAndGetCardpin();
+        String upi = null;
+        CardDetails card = null;
+        try{
+            card = new CardDetails(bankAbbrvt,cardNo,expireDate[0],expireDate[1],cvv, cardpin);
+            upi = bank.ValidateCardDetails(card,username);
 
-        BankInterface bank = getBankInstance();
+        }catch(Exception e){
+            System.out.println("Something went wrong.");
+            e.printStackTrace();
+            addCard(username);
+        }
 
-        return bank;
+        try{
+            if(upi.equals("AlreadyContainsUPI")){
+                if(bank.authenticateUPIpin(getUPIPIN(), username))
+                    return upi;
+                else {
+                    System.out.println("Enter correct upi pin.");
+                    bank.authenticateUPIpin(getUPIPIN(), username);
+                }
+            }else {
+                bank.SaveUpiAndPin(upi, card,getUPIPIN());
+                return upi;
+            }
+        }catch(Exception e){
+            System.out.println("Something went wrong.");
+            e.printStackTrace();
+            addCard(username);
+        }
+
+        return null;
     }
 
-    private BankInterface getBankInstance(int index){
+    private String getUPIPIN() {
+        display("Enter pin for upi");
+        String pin = scan();
+        if(pin.length() >= 6)
+            return pin;
+        else {
+            display("Enter pin of length 6 or more.");
+            getUPIPIN();
+        }
+        return null;
+    }
 
-        switch(index){
-            case 1 :
-                final BankInterface sbi = (BankInterface) banksForDemoAppication.State_Bank_of_India(1, "sbi").bankResolver();
+    private BankInterface getBankInstance(String abbrvt){
+
+        switch(abbrvt){
+            case "sbi" : {
+                banksForDemoApplication bankEnum = banksForDemoApplication.State_Bank_of_India;
+                final BankInterface sbi = (BankInterface) bankEnum.bankResolver();
                 return sbi;
-                break;
+            }
             default:
-                throw new IllegalStateException("Unexpected value: " + index);
+                throw new IllegalStateException("Unexpected value: " + abbrvt);
         }
 
     }
@@ -199,10 +280,14 @@ public class DemoApplication implements ApplicationInterface{
         return (validateNumber(month,1,12) && validateNumber(year,2000, 2050));
     }
 
-    private String validateAndGetCardNo() {
+    private long validateAndGetCardNo() {
         display("Enter card number :");
         String cardNo = scan();
-        return cardNo;
+        try{
+            return (long) Long.parseLong(cardNo);
+        }catch(ClassCastException e){
+            return 0L;
+        }
     }
 
     private String getBank() {
@@ -216,7 +301,7 @@ public class DemoApplication implements ApplicationInterface{
         display(sb.toString());
         String val = scan();
         if(!validateNumber(val,1,banks.size())) getBank();
-        return ApplicationRepository.bankList.get(banks.get(Integer.parseInt(val)-1));
+        return banks.get(Integer.parseInt(val) - 1);
     }
 
     private boolean validateNumber(String val, int start, int end) {
@@ -228,25 +313,92 @@ public class DemoApplication implements ApplicationInterface{
     public void updateAccount() {
         display("Enter old password :");
         String oldPass = scan();
-        display("Enter ");
+        display("Enter name");
+        String name = scan();
+        this.user.setName(name);
+        display("Enter new password");
+        String newPass = validateAndGetPassword();
+        this.user.setPassword(newPass);
+
+        display("1.Add  or 2.Delete phone number (1/2)");
+        int option = 0;
+        try{
+            option = Integer.parseInt(scan());
+        }catch(ClassCastException e){
+            updateAccount();
+        }
+        if(option == 1){
+            Phone phoneNumber = validateAndGetPhoneNumber();
+            try{
+                this.user.addPhoneNumber(phoneNumber);
+            }catch(Exception e){
+                e.printStackTrace();
+                updateAccount();
+            }
+        }else if(option == 2){
+            Phone phoneNumber = validateAndGetPhoneNumber();
+            try{
+                this.user.deletePhoneNumber(phoneNumber);
+            }catch(Exception e){
+                e.printStackTrace();
+                updateAccount();
+            }
+        }
+
+
+    }
+
+    private void updateAccount(UserAccount acc, UserAccount accountNew){
+        List<UserAccount> list = ApplicationRepository.userList;
+        list.remove(acc);
+        list.add(accountNew);
     }
 
 
 
     @Override
     public void payToUPI() {
-
+        display("Enter user upi");
+        String upi = scan();
+        display("Enter amount");
+        try{
+            Integer amount = Integer.parseInt(scan());
+            payToUPI(upi, amount);
+        } catch (ClassCastException e){
+            e.printStackTrace();
+            payToUPI();
+        }
+    }
+    private void payToUPI(String upi, int amount) {
+        int bal = 0;
+        display("Enter password of your upi");
+        String pass = scan();
+        if(!this.bank.authenticateUPIpin(pass, this.user.getUPIId())) {
+            display("Enter valid UPIID");
+            payToUPI(upi, amount);
+        }
+        BankInterface transferBank = null;
+        try{
+            transferBank = getBankInstance(
+                    upi.split("@")[1]
+            );
+        }catch(Exception e){
+            System.out.println("bank not found");
+            payToUPI();
+        }
+        try{
+            bal = transferBank.credit(upi, amount);
+        }catch(Exception e){
+            display("Something went wrong");
+            payToUPI();
+        }
+        display(Integer.toString(bal));
     }
 
     @Override
-    public void getCurrentAmount() {
-
-    }
-
-
-    @Override
-    public void requestPaymentFromUPI() {
-
+    public void getCurrentAmount(String pass) {
+        int bal = this.bank.fetchAmount(this.user.getUPIId(),pass);
+        display(Integer.toString(bal));
     }
 
 

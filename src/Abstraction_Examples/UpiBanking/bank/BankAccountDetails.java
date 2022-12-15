@@ -1,31 +1,31 @@
 package Abstraction_Examples.UpiBanking.bank;
 
+import Abstraction_Examples.UpiBanking.Application.CardDetails;
+import Abstraction_Examples.UpiBanking.User.Address;
+import Abstraction_Examples.UpiBanking.User.Phone;
+
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public abstract class BankAccountDetails {
 
     private final String AccountHolder;
-    private final String address;
-    private final String phone;
-    private final String bank;
-    private final long cardNo;
-    private final Calendar expireDate;
-    private final int cvv;
-    private final int cardPin;
+    private final Address address;
+    private final List<Phone> phoneNos;
+
+    private final long accountNumber;
+
     protected int amount;
 
-    protected BankAccountDetails(String accountHolder, String address, String phone,
-                              String bank, long cardNo, Calendar expireDate,
-                              int cvv, int cardPin, int amount) {
+
+    public BankAccountDetails(String accountHolder, Address address, Phone phone, int amount, long accountNumber) {
         this.AccountHolder = accountHolder;
         this.address = address;
-        this.phone = phone;
-        this.bank = bank;
-        this.cardNo = cardNo;
-        this.expireDate = expireDate;
-        this.cvv = cvv;
-        this.cardPin = cardPin;
+        this.phoneNos = new ArrayList<Phone>();
+        this.phoneNos.add(phone);
         this.amount = amount;
+        this.accountNumber = accountNumber;
     }
 
     protected abstract int getAmount();
@@ -33,5 +33,7 @@ public abstract class BankAccountDetails {
     protected abstract int decrement(int debit);
 
     protected abstract int increment(int credit);
+
+
 
 }

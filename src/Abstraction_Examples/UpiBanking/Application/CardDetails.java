@@ -3,6 +3,7 @@ package Abstraction_Examples.UpiBanking.Application;
 import java.util.Base64;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Objects;
 
 public class CardDetails {
     private final String bank;
@@ -30,5 +31,18 @@ public class CardDetails {
     private boolean isLeapYear(int year){
         if(year % 4 == 0 && year % 100 != 0) return true;
         else return year % 100 == 0 && year % 400 == 0;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CardDetails)) return false;
+        CardDetails that = (CardDetails) o;
+        return cardNo == that.cardNo && cvv == that.cvv && bank.equals(that.bank) && expireDate.equals(that.expireDate) && cardpin.equals(that.cardpin);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(bank, cardNo, expireDate, cvv, cardpin);
     }
 }

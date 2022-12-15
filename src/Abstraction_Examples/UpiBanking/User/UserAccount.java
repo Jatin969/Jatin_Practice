@@ -13,8 +13,6 @@ public class UserAccount {
     private final String username;
     private String name;
 
-    private final COUNTRY country;
-
     private List<Phone> phoneNos;
     private String password;
 
@@ -24,19 +22,12 @@ public class UserAccount {
 
 
 
-    public void addNumber(Phone phone){
-        if(this.phoneNos.size() > 3) throw new ArrayIndexOutOfBoundsException();
-        Optional<Phone> present = this.phoneNos.stream().filter(p -> {return p.equals(phone);}).findFirst();
-        if(present.isPresent()==false) this.phoneNos.add(phone);
-    }
-
-    public UserAccount(String name, String phoneNo, COUNTRY country, String password, String username, String ipuId) throws InvalidPhoneNumberException {
-        this.country = country;
+    public UserAccount(String name, Phone phoneNo, String password, String username, String ipuId) throws InvalidPhoneNumberException {
         this.username = username;
         this.ipuId = ipuId;
         this.name = name;
         this.phoneNos = new ArrayList<Phone>();
-        this.phoneNos.add(new Phone(this.country,phoneNo));
+        this.phoneNos.add(phoneNo);
         this.password = password;
     }
 
@@ -47,6 +38,12 @@ public class UserAccount {
 
     public String getPassword() {
         return password;
+    }
+
+    public void addPhoneNumber(Phone phone){
+        if(this.phoneNos.size() > 3) throw new ArrayIndexOutOfBoundsException();
+        Optional<Phone> present = this.phoneNos.stream().filter(p -> {return p.equals(phone);}).findFirst();
+        if(present.isPresent()==false) this.phoneNos.add(phone);
     }
 
     public void setName(String name){
@@ -64,5 +61,10 @@ public class UserAccount {
             if(this.phoneNos.get(i).equals(number)) {numberPresent = true; this.phoneNos.remove(i);}
         if(!numberPresent) throw new PhoneNumberNotFoundException();
     }
+
+    public String getUPIId(){
+        return this.ipuId;
+    }
+
 
 }
