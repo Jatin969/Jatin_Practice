@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="practice of loops and operators with if else and switch statements.">
-      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/AmountIsLow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/MarkerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/sbi/SbiBankAccountDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/ApplicationUserAndABankRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/CardDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/CardDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/IncorrectCardDetailsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/IncorrectCardDetailsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/InvalidPhoneNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/InvalidPhoneNumberException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/PhoneListEmptyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/PhoneListEmptyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/PhoneNumberNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Exceptions/PhoneNumberNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/UserAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/BankAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/BankAccountDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/BankInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/BankInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/sbi/bankAccountsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/sbi/bankAccountsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/sbi/sbiBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/bank/sbi/sbiBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExceptionExamples/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExceptionExamples/Example.java" afterDir="false" />
-    </list>
+    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="UPDATED readme file and completed abrstraction example" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671025597261</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UPDATED readme file and completed abrstraction example">
+      <created>1671115320182</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671115320182</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,7 +288,8 @@
     <MESSAGE value="practice" />
     <MESSAGE value="practice-1" />
     <MESSAGE value="practice of loops and operators with if else and switch statements." />
-    <option name="LAST_COMMIT_MESSAGE" value="practice of loops and operators with if else and switch statements." />
+    <MESSAGE value="UPDATED readme file and completed abrstraction example" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED readme file and completed abrstraction example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
