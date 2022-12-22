@@ -112,6 +112,7 @@ public final class hashFunction {
         System.out.println(hashCode1.equals(hashCode2));
 //        System.out.println(md.getAlgorithm());
 //        System.out.println(md.getProvider());
+        System.out.println("TEST FOR HASHING...");
 
     }
 
