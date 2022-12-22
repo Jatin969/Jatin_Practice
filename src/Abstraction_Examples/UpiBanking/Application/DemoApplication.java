@@ -285,7 +285,7 @@ public class DemoApplication implements ApplicationInterface{
         String cardNo = scan();
         try{
             return (long) Long.parseLong(cardNo);
-        }catch(ClassCastException e){
+        }catch(NumberFormatException e){
             return 0L;
         }
     }
@@ -324,7 +324,7 @@ public class DemoApplication implements ApplicationInterface{
         int option = 0;
         try{
             option = Integer.parseInt(scan());
-        }catch(ClassCastException e){
+        }catch(NumberFormatException e){
             updateAccount();
         }
         if(option == 1){

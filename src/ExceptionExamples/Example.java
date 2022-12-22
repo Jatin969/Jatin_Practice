@@ -1,5 +1,9 @@
 package ExceptionExamples;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class Example {
     static int val;
     public static void method1(){
@@ -71,7 +75,22 @@ public class Example {
         // we have to use java -ea example
     }
 
-    public static void main(String[] args) {
+    public static void IllegalStateExceptionExample1(){
+        List<Integer> list = new ArrayList<>();
 
+        list.add(10);
+        list.add(100);
+        list.add(1000);
+        Iterator<Integer> itr = list.iterator();
+        while(itr.hasNext()){
+            Integer val = itr.next();
+            if(val == 10)
+                itr.remove();
+        }
+        System.out.println(list);
+    }
+
+    public static void main(String[] args) {
+        IllegalStateExceptionExample1();
     }
 }

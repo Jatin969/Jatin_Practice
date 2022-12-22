@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="UPDATED readme file and completed abrstraction example" />
+    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="removed unnecessary files">
+      <change afterPath="$PROJECT_DIR$/src/Annotations/TestAnnotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Annotations/UserAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections_practice/practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hashing/hashFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javaSerialization/serialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snapshot/snapshotCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jatin_Practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Jatin_Practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExceptionExamples/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExceptionExamples/Example.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,8 +66,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jatin/Desktop/Jatin_Practice&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jatin/Desktop/Jatin_Practice/src&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
@@ -67,17 +82,20 @@
       <recent name="Abstraction_Examples.UpiBanking.Application_PAYTM.bank" />
       <recent name="Abstraction_Examples.UpiBanking.Application_PAYTM" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jatin\Desktop\Jatin_Practice\src" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Abstraction_Examples.UpiBanking.User" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ObjectStreamComparision">
-    <configuration name="ObjectStreamComparision" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysAndLoops.ObjectStreamComparision" />
+  <component name="RunManager" selected="JUnit.snapshotCode.test">
+    <configuration name="hashFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hashing.hashFunction" />
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArraysAndLoops.*" />
+          <option name="PATTERN" value="Hashing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="arraysAndLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysAndLoops.arraysAndLoops" />
+    <configuration name="serialize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaSerialization.serialize" />
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArraysAndLoops.*" />
+          <option name="PATTERN" value="javaSerialization.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,52 +116,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="forExecution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Objects_Classes.forExecution" />
+    <configuration name="hashFunction.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Objects_Classes.*" />
+          <option name="PATTERN" value="Hashing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Hashing" />
+      <option name="MAIN_CLASS_NAME" value="Hashing.hashFunction" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="forloopAndLabels" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysAndLoops.forloopAndLabels" />
+    <configuration name="hashFunction.testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArraysAndLoops.*" />
+          <option name="PATTERN" value="Hashing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Hashing" />
+      <option name="MAIN_CLASS_NAME" value="Hashing.hashFunction" />
+      <option name="METHOD_NAME" value="testing" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Abstraction_Examples.UpiBanking.test" />
+    <configuration name="snapshotCode.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Abstraction_Examples.UpiBanking.*" />
+          <option name="PATTERN" value="snapshot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="snapshot" />
+      <option name="MAIN_CLASS_NAME" value="snapshot.snapshotCode" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ObjectStreamComparision" />
-        <item itemvalue="Application.forloopAndLabels" />
-        <item itemvalue="Application.arraysAndLoops" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.forExecution" />
+        <item itemvalue="JUnit.snapshotCode.test" />
+        <item itemvalue="JUnit.hashFunction.test2" />
+        <item itemvalue="JUnit.hashFunction.testing" />
+        <item itemvalue="Application.hashFunction" />
+        <item itemvalue="Application.serialize" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671115320182</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="removed unnecessary files">
+      <created>1671115483641</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671115483641</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,7 +323,8 @@
     <MESSAGE value="practice-1" />
     <MESSAGE value="practice of loops and operators with if else and switch statements." />
     <MESSAGE value="UPDATED readme file and completed abrstraction example" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED readme file and completed abrstraction example" />
+    <MESSAGE value="removed unnecessary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -297,6 +332,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.RuntimeException" package="java.lang" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

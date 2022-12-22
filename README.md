@@ -1,3 +1,4 @@
+**Concepts of java I covered.**
 
 Week 1 :
  **CLASSES**
@@ -56,6 +57,21 @@ Week 2 :
     * Assertion
     * String, StringBuffer and StringBuilder
     * Commonly used methods of String
+    * Date: Date class, Calendar Class, DateFormat, Timezone
+**Collections**
+
+    * Interfaces and Classes
+    * List, ArrayList and LinkedList
+    * Set: TreeSet, HashSet
+    * Map: HashMap, TreeMap, LinkedHashMap
+    * Queue
+    * Generics
+
+Week 4: 
+
+**General Concepts**
+
+     * Package and Imports
 
     
 

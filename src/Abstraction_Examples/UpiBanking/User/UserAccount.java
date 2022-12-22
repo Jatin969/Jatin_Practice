@@ -5,6 +5,7 @@ import Abstraction_Examples.UpiBanking.Exceptions.PhoneListEmptyException;
 import Abstraction_Examples.UpiBanking.Exceptions.PhoneNumberNotFoundException;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -63,8 +64,14 @@ public class UserAccount {
     }
 
     public String getUPIId(){
+        int[] arr = new int[10];
+        for(int i = 0; i<10; i++)
+            arr[i] = i;
+
         return this.ipuId;
+
     }
+
 
 
 }
