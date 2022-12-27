@@ -41,6 +41,7 @@ public class serialize  {
         File f = new File("");
         String  str = f.getAbsolutePath();
         System.out.println("path : " + str);
+
         try(FileOutputStream fos = new FileOutputStream("newFolder/source.txt");
             ObjectOutputStream writer = new ObjectOutputStream(fos)) {
             writer.writeObject(s);

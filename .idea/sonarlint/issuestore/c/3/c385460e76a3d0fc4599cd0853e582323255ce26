@@ -1,0 +1,35 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ğüÊüÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¿Ä¢
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(è“áŠ
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¦ëñ´
+z
+java:S1149I"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¨âàøÿÿÿÿ
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¦ëñ´
+R
+java:S1854 "7Remove this useless assignment to local variable "tc1".(×Åô¯øÿÿÿÿ
+C
+java:S1481 "(Remove this unused "tc1" local variable.(×Åô¯øÿÿÿÿ
+h	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Áşòıÿÿÿÿ
+<
+java:S19054"&Remove this unnecessary cast to "int".(¥áæó
+V	java:S1255"<This block of commented-out lines of code should be removed.(í«¯³ùÿÿÿÿ
+5
+java:S3010>"Remove this assignment of "md".(¾ñğÜ
+U
+java:S1854G":Remove this useless assignment to local variable "length".(øÕ•ûÿÿÿÿÿ
+F
+java:S1481G"+Remove this unused "length" local variable.(øÕ•ûÿÿÿÿÿ
+9
+java:S2119H"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(ÏÇ°•ÿÿÿÿÿ
+N	java:S106e"9Replace this use of System.out or System.err by a logger.(éÑœº
+V	java:S125c"<This block of commented-out lines of code should be removed.(ˆî¶äüÿÿÿÿ
+N	java:S106n"9Replace this use of System.out or System.err by a logger.(ºùéµ
+S	java:S106o"9Replace this use of System.out or System.err by a logger.(´©Êñûÿÿÿÿ
+M	java:S106p"9Replace this use of System.out or System.err by a logger.(ˆÌ²V
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(êƒîî
+Q	java:S125q"<This block of commented-out lines of code should be removed.(àËşõ
+K
+java:S1144D"0Remove this unused private "generateKey" method.(´±íùøÿÿÿÿ

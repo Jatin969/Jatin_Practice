@@ -1,0 +1,13 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(´äºÓûÿÿÿÿ
+;
+java:S1659"%Declare "breadth" on a separate line.(›¿¶ô
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(ÿÕåÔüÿÿÿÿ
+:
+java:S1659@"%Declare "breadth" on a separate line.(Œ½©
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(¢Ÿİ°
+M	java:S106L"9Replace this use of System.out or System.err by a logger.(±Ş®2
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(‰×·Ÿüÿÿÿÿ
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(¹Şü…
+S	java:S106h"9Replace this use of System.out or System.err by a logger.(Õö”®ÿÿÿÿÿ
+S	java:S106k"9Replace this use of System.out or System.err by a logger.(æÚ™ÿÿÿÿÿ

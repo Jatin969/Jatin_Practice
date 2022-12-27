@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="removed unnecessary files">
-      <change afterPath="$PROJECT_DIR$/src/Annotations/TestAnnotations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Annotations/UserAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections_practice/practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hashing/hashFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javaSerialization/serialize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/snapshot/snapshotCode.java" afterDir="false" />
+    <list default="true" id="490758e6-dadd-47e2-9de9-1d9c15cf71ff" name="Changes" comment="adding new week tasks practice code.">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24af901002d369530e13f109a4853e24917a0ae5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/9796029bda7f075788fa0519bcec8dfbc90576f4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newFolder/books/Middlemarch.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newFolder/books/Sherlock_Holmes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newFolder/books/folder/ARoomWithAView.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newFolder/books/jatin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/searching/MultipleFileSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/searching/SimpleSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jatin_Practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Jatin_Practice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/Application/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/User/UserAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstraction_Examples/UpiBanking/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExceptionExamples/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExceptionExamples/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections_practice/practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections_practice/practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Objects_Classes/inheritanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects_Classes/inheritanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaSerialization/serialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaSerialization/serialize.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +54,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2IaHjx64fOId0uYk1SkhulTDaG4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -63,12 +67,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jatin/Desktop/Jatin_Practice/src&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jatin/Desktop/Jatin_Practice&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
@@ -85,17 +93,20 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jatin\Desktop\Jatin_Practice\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jatin\Desktop\Jatin_Practice\newFolder\books" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Abstraction_Examples.UpiBanking.User" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.snapshotCode.test">
-    <configuration name="hashFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hashing.hashFunction" />
+  <component name="RunManager" selected="JUnit.MultipleFileSearch">
+    <configuration name="MultipleFileSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="searching.MultipleFileSearch" />
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Hashing.*" />
+          <option name="PATTERN" value="searching.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,74 +114,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="serialize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaSerialization.serialize" />
+    <configuration name="MultipleFileSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaSerialization.*" />
+          <option name="PATTERN" value="searching.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="searching" />
+      <option name="MAIN_CLASS_NAME" value="searching.MultipleFileSearch" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hashFunction.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultipleFileSearch.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Hashing.*" />
+          <option name="PATTERN" value="searching.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Hashing" />
-      <option name="MAIN_CLASS_NAME" value="Hashing.hashFunction" />
+      <option name="PACKAGE_NAME" value="searching" />
+      <option name="MAIN_CLASS_NAME" value="searching.MultipleFileSearch" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultipleFileSearch.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jatin_Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="searching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="searching" />
+      <option name="MAIN_CLASS_NAME" value="searching.MultipleFileSearch" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hashFunction.testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimpleSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jatin_Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Hashing.*" />
+          <option name="PATTERN" value="searching.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Hashing" />
-      <option name="MAIN_CLASS_NAME" value="Hashing.hashFunction" />
-      <option name="METHOD_NAME" value="testing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="snapshotCode.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Jatin_Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="snapshot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="snapshot" />
-      <option name="MAIN_CLASS_NAME" value="snapshot.snapshotCode" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="searching" />
+      <option name="MAIN_CLASS_NAME" value="searching.SimpleSearch" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.snapshotCode.test" />
-        <item itemvalue="JUnit.hashFunction.test2" />
-        <item itemvalue="JUnit.hashFunction.testing" />
-        <item itemvalue="Application.hashFunction" />
-        <item itemvalue="Application.serialize" />
+        <item itemvalue="JUnit.MultipleFileSearch" />
+        <item itemvalue="JUnit.MultipleFileSearch.test2" />
+        <item itemvalue="JUnit.MultipleFileSearch.test1" />
+        <item itemvalue="Application.MultipleFileSearch" />
+        <item itemvalue="JUnit.SimpleSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +251,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671115483641</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding new week tasks practice code.">
+      <created>1671717860874</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671717860874</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adding new week tasks practice code.">
+      <created>1671717985431</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671717985431</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,7 +350,8 @@
     <MESSAGE value="practice of loops and operators with if else and switch statements." />
     <MESSAGE value="UPDATED readme file and completed abrstraction example" />
     <MESSAGE value="removed unnecessary files" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary files" />
+    <MESSAGE value="adding new week tasks practice code." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding new week tasks practice code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -339,5 +366,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Jatin_Practice$SimpleSearch_test1.ic" NAME="SimpleSearch.test1 Coverage Results" MODIFIED="1672053761907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>searching.*</FILTER>
+    </SUITE>
   </component>
 </project>

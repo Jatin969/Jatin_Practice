@@ -14,6 +14,7 @@ public class inheritanceTest {
             j.add(1000);
             System.out.println(j.displayHello());
             System.out.println(j.displayNotHello());
+            String password = "HEllo ASER23";
 
         }
 

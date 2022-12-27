@@ -58,6 +58,8 @@ class NEWOBJECT implements Comparable<NEWOBJECT>{
     public int compareTo(NEWOBJECT o) {
         return this.priority - o.priority;
     }
+
+
 }
 
 class NEWObjectComparator implements Comparator<NEWOBJECT>{
